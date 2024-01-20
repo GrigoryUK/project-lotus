@@ -31,7 +31,7 @@ export const PeopleList = (props: PeopleListProps): JSX.Element => {
       <div className={styles.PeopleList__center}>
         <Spinner variant='primary' />
       </div>
-    ); 
+    );
   }
 
   if (isError) {
