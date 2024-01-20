@@ -1,0 +1,28 @@
+.Spinner {
+  &__primary {
+    color: var(--blue-primary);
+    fill: var(--blue-primary);
+  }
+
+  &__secondary {
+    color: var(--white-primary);
+    fill: var(--white-primary);
+  }
+
+  &__sm {
+    width: 48px;
+    height: 48px;
+  }
+
+  &__md {
+    width: 96px;
+    height: 96px;
+  }
+
+  &__lg {
+    width: 128px;
+    height: 128px;
+  }
+
+  @apply animate-spin;
+}

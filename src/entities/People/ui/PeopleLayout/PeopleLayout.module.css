@@ -1,0 +1,19 @@
+.PeopleLayout {
+  padding: 72px 16px;
+  max-width: 1280px;
+  margin: 0 auto;
+  width: 100%; }
+  @media (max-width: 1024px) {
+    .PeopleLayout {
+      padding: 20px 16px; } }
+  .PeopleLayout__container {
+    background: var(--white-primary);
+    border-radius: 20px;
+    padding: 24px;
+    min-height: calc(100vh - 72px - 72px);
+    position: relative; }
+    @media (max-width: 1024px) {
+      .PeopleLayout__container {
+        min-height: calc(100vh - 20px - 20px); } }
+
+/*# sourceMappingURL=PeopleLayout.module.css.map */

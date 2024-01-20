@@ -1,0 +1,19 @@
+.Spinner {
+  @apply animate-spin; }
+  .Spinner__primary {
+    color: var(--blue-primary);
+    fill: var(--blue-primary); }
+  .Spinner__secondary {
+    color: var(--white-primary);
+    fill: var(--white-primary); }
+  .Spinner__sm {
+    width: 48px;
+    height: 48px; }
+  .Spinner__md {
+    width: 96px;
+    height: 96px; }
+  .Spinner__lg {
+    width: 128px;
+    height: 128px; }
+
+/*# sourceMappingURL=Spinner.module.css.map */

@@ -1,0 +1,26 @@
+.PeopleHeader {
+  position: relative;
+
+  &:hover {
+    svg {
+      fill: var(--black-primary);
+    }
+  }
+  svg {
+    max-width: 24px;
+    min-height: 24px;
+    position: absolute;
+    top: 35%;
+    left: 24px;
+    transform: rotateY(-50%);
+    fill: var(--gray-third);
+    transition: all 0.2s ease;
+
+    @media (max-width: (1024px)) {
+      max-width: 20px;
+      min-height: 20px;
+      top: 30%;
+      left: 16px;
+    }
+  }
+}
