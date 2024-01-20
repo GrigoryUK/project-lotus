@@ -9,6 +9,16 @@ interface PeopleItemProps {
   people: People;
 }
 
+type GenderType = {
+  [key: string]: string;
+};
+
+const Gender: GenderType = {
+  male: 'Мужчина',
+  female: 'Женщина',
+  'n/a': 'Неизвествно',
+};
+
 export const PeopleItem = (props: PeopleItemProps): JSX.Element => {
   const { className, people, ...rest } = props;
 
@@ -22,15 +32,15 @@ export const PeopleItem = (props: PeopleItemProps): JSX.Element => {
         </div>
         <div className={styles.PeopleItem__row}>
           <span>Вес:</span>
-          <span>{people.mass}</span>
+          <span>{people.mass} кг</span>
         </div>
         <div className={styles.PeopleItem__row}>
           <span>Рост:</span>
-          <span>{people.height}</span>
+          <span>{people.height} см</span>
         </div>
         <div className={styles.PeopleItem__row}>
-          <span>Гендер:</span>
-          <span>{people.gender}</span>
+          <span>Пол:</span>
+          <span>{Gender[people.gender]}</span>
         </div>
       </div>
     </div>
