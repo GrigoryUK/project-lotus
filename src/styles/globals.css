@@ -36,7 +36,7 @@
     font-weight: 400;
     line-height: 1.5;
     color: var(--black-primary);
-    background: var(--gray-primary);
+    background: var(--black-primary);
   }
 }
 @layer utilities {
