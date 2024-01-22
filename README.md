@@ -1,6 +1,6 @@
 # Техническое задание для компании Lotus
 
-![Image-project](https://github.com/{username}/{repository}/raw/{branch}/{path}/image.png)
+![Image-project](https://github.com/GrigoryUK/project-lotus/raw/master/public/images/page-prev.jpg)
 
 ## Ссылка на работающий прототип
 
