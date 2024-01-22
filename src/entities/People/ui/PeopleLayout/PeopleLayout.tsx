@@ -7,15 +7,17 @@ interface PeopleLayoutProps {
   children: React.ReactNode;
 }
 
-import ImageBackground from '~/svg/image-background.svg';
-
 export const PeopleLayout = (props: PeopleLayoutProps): JSX.Element => {
   const { className, children, ...rest } = props;
 
   return (
     <div className={cn(styles.PeopleLayout, className)} {...rest}>
       {/* eslint-disable-next-line @next/next/no-img-element */}
-      <ImageBackground className={styles.PeopleLayout__background} />
+      <img
+        className={styles.PeopleLayout__background}
+        src='./images/background.jpg'
+        alt='background'
+      />
       <div className={styles.PeopleLayout__container}>{children}</div>
     </div>
   );
