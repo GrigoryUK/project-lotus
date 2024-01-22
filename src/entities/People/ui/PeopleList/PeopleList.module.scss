@@ -20,11 +20,11 @@
 
   &::-webkit-scrollbar-thumb {
     border-radius: 1rem;
-    background: var(--gray-third);
+    background: var(--white-primary);
   }
 
   &::-webkit-scrollbar-track {
-    background-color: var(--white-primary);
+    background-color: transparent;
   }
 
   &__center {
@@ -56,6 +56,7 @@
       font-size: 32px;
       line-height: 130%;
       margin-bottom: 10px;
+      color: var(--white-primary);
 
       @media (max-width: (1024px)) {
         text-align: center;

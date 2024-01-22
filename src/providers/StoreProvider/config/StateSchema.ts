@@ -11,9 +11,11 @@ import { CombinedState } from 'redux';
 
 import { rtkApi } from '@/api/rtkApi';
 import { CounterSchema } from '@/entities/Counter';
+import { PeopleSchema } from '@/entities/People/model/types/people';
 
 export interface StateSchema {
   counter: CounterSchema;
+  searchPeople: PeopleSchema;
   [rtkApi.reducerPath]: ReturnType<typeof rtkApi.reducer>;
 }
 

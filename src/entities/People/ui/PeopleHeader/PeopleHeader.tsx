@@ -24,7 +24,7 @@ export const PeopleHeader = (props: PeopleHeaderProps): JSX.Element => {
         variant='search'
         onChange={onChange}
         value={value}
-        placeholder='Начните поиск'
+        placeholder='Поиск персонажей Star Wars'
         type='text'
       />
     </div>

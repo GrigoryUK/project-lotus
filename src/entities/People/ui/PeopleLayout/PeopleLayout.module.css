@@ -2,18 +2,33 @@
   padding: 72px 16px;
   max-width: 1280px;
   margin: 0 auto;
-  width: 100%; }
-  @media (max-width: 1024px) {
-    .PeopleLayout {
-      padding: 20px 16px; } }
+  width: 100%;
+}
+@media (max-width: 1024px) {
+  .PeopleLayout {
+    padding: 20px 16px;
+  }
+}
+.PeopleLayout__container {
+  border-radius: 20px;
+  padding: 24px;
+  min-height: calc(100vh - 72px - 72px);
+  position: relative;
+  border: 2px solid var(--purple-primary);
+  background: var(--black-secondary);
+}
+@media (max-width: 1024px) {
   .PeopleLayout__container {
-    background: var(--white-primary);
-    border-radius: 20px;
-    padding: 24px;
-    min-height: calc(100vh - 72px - 72px);
-    position: relative; }
-    @media (max-width: 1024px) {
-      .PeopleLayout__container {
-        min-height: calc(100vh - 20px - 20px); } }
+    min-height: calc(100vh - 20px - 20px);
+  }
+}
+.PeopleLayout__background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 
 /*# sourceMappingURL=PeopleLayout.module.css.map */

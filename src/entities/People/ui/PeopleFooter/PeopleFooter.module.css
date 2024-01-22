@@ -1,13 +1,17 @@
 .PeopleFooter {
-  margin-top: 24px; }
-  @media (max-width: 1024px) {
-    .PeopleFooter {
-      margin-top: 20px; } }
-  .PeopleFooter span {
-    color: var(--gray-third);
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 125%; }
+  margin-top: 24px;
+}
+@media (max-width: 1024px) {
+  .PeopleFooter {
+    margin-top: 20px;
+  }
+}
+.PeopleFooter span {
+  color: var(--white-primary);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 125%;
+}
 
 /*# sourceMappingURL=PeopleFooter.module.css.map */

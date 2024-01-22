@@ -5,9 +5,11 @@ import styles from './Spinner.module.scss';
 const SpinnerVariant = ['primary', 'secondary'] as const;
 const SpinnerSize = ['sm', 'md', 'lg'] as const;
 
-import { FaSpinner } from 'react-icons/fa';
+// import { FaSpinner } from 'react-icons/fa';
 
 import { cn } from '@/lib/utils';
+
+import IconSpinner from '~/svg/icon-spinner.svg';
 
 interface SpinnerProps {
   className?: string;
@@ -20,7 +22,7 @@ export const Spinner = (props: SpinnerProps) => {
 
   return (
     <div role='status'>
-      <FaSpinner
+      <IconSpinner
         className={cn(
           styles.Spinner,
           [

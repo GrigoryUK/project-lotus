@@ -1,8 +1,12 @@
+import Highlighter from 'react-highlight-words';
+import { useSelector } from 'react-redux';
+
 import styles from './PeopleItem.module.scss';
 
 import { cn } from '@/lib/utils';
 
-import { People } from '@/entities/People/model/types/People';
+import { valueSearch } from '@/entities/People/model/selectors/peopleSelectors';
+import { People } from '@/entities/People/model/types/people';
 
 interface PeopleItemProps {
   className?: string;
@@ -22,9 +26,18 @@ const Gender: GenderType = {
 export const PeopleItem = (props: PeopleItemProps): JSX.Element => {
   const { className, people, ...rest } = props;
 
+  const searchText = useSelector(valueSearch);
+
   return (
     <div className={cn(styles.PeopleItem, className)} {...rest}>
-      <div className={styles.PeopleItem__title}>{people.name}</div>
+      <div className={styles.PeopleItem__title}>
+        <Highlighter
+          highlightStyle={{ backgroundColor: '#FFE919', padding: 0 }}
+          searchWords={[searchText]}
+          autoEscape
+          textToHighlight={people.name ? people.name.toString() : ''}
+        />
+      </div>
       <div className={styles.PeopleItem__info}>
         <div className={styles.PeopleItem__row}>
           <span>Дата рождения:</span>

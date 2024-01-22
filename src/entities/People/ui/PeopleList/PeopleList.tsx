@@ -6,14 +6,14 @@ import { cn } from '@/lib/utils';
 
 import { Spinner } from '@/components';
 
-import { PeopleResult } from '@/entities/People/model/types/People';
+import { PeopleResult } from '@/entities/People/model/types/people';
 import { PeopleItem } from '@/entities/People/ui/PeopleItem/PeopleItem';
 
 interface PeopleListProps {
   className?: string;
-  isError: boolean;
-  isLoading: boolean;
   data?: PeopleResult;
+  isLoading: boolean;
+  isError: boolean;
 }
 
 export const PeopleList = (props: PeopleListProps): JSX.Element => {
@@ -29,7 +29,7 @@ export const PeopleList = (props: PeopleListProps): JSX.Element => {
   if (isLoading) {
     state = (
       <div className={styles.PeopleList__center}>
-        <Spinner variant='primary' />
+        <Spinner size='lg' variant='primary' />
       </div>
     );
   }

@@ -1,5 +1,5 @@
 import { rtkApi } from '@/api/rtkApi';
-import { PeopleResult } from '@/entities/People/model/types/People';
+import { PeopleResult } from '@/entities/People/model/types/people';
 
 const cargoApi = rtkApi.injectEndpoints({
   endpoints: (build) => ({

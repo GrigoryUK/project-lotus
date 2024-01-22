@@ -5,61 +5,81 @@
   gap: 30px;
   overflow-x: hidden;
   overflow-y: auto;
-  height: calc(100vh - 390px); }
-  @media (max-width: 1024px) {
-    .PeopleList {
-      margin-top: 30px;
-      min-height: calc(100vh - 260px); } }
-  .PeopleList::-webkit-scrollbar {
-    border-radius: 1rem;
-    width: 0.6rem;
-    max-height: 10rem; }
-  .PeopleList::-webkit-scrollbar-thumb {
-    border-radius: 1rem;
-    background: var(--gray-third); }
-  .PeopleList::-webkit-scrollbar-track {
-    background-color: var(--white-primary); }
+  height: calc(100vh - 390px);
+}
+@media (max-width: 1024px) {
+  .PeopleList {
+    margin-top: 30px;
+    min-height: calc(100vh - 260px);
+  }
+}
+.PeopleList::-webkit-scrollbar {
+  border-radius: 1rem;
+  width: 0.6rem;
+  max-height: 10rem;
+}
+.PeopleList::-webkit-scrollbar-thumb {
+  border-radius: 1rem;
+  background: var(--white-primary);
+}
+.PeopleList::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+.PeopleList__center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: calc(100vh - 390px);
+  overflow: hidden;
+}
+@media (max-width: 1024px) {
   .PeopleList__center {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: calc(100vh - 390px);
-    overflow: hidden; }
-    @media (max-width: 1024px) {
-      .PeopleList__center {
-        min-height: calc(100vh - 300px); } }
+    min-height: calc(100vh - 300px);
+  }
+}
+.PeopleList__error {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: calc(100vh - 390px);
+  overflow: hidden;
+}
+@media (max-width: 1024px) {
   .PeopleList__error {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: calc(100vh - 390px);
-    overflow: hidden; }
-    @media (max-width: 1024px) {
-      .PeopleList__error {
-        min-height: calc(100vh - 300px); } }
-    .PeopleList__error span {
-      font-size: 32px;
-      line-height: 130%;
-      margin-bottom: 10px; }
-      @media (max-width: 1024px) {
-        .PeopleList__error span {
-          text-align: center;
-          font-size: 20px; } }
-    .PeopleList__error button {
-      background: var(--blue-primary);
-      color: var(--white-primary);
-      border-radius: 12px;
-      font-family: var(--font-primary);
-      font-weight: 600;
-      padding: 12px 12px 13px; }
+    min-height: calc(100vh - 300px);
+  }
+}
+.PeopleList__error span {
+  font-size: 32px;
+  line-height: 130%;
+  margin-bottom: 10px;
+  color: var(--white-primary);
+}
+@media (max-width: 1024px) {
+  .PeopleList__error span {
+    text-align: center;
+    font-size: 20px;
+  }
+}
+.PeopleList__error button {
+  background: var(--blue-primary);
+  color: var(--white-primary);
+  border-radius: 12px;
+  font-family: var(--font-primary);
+  font-weight: 600;
+  padding: 12px 12px 13px;
+}
+.PeopleList__skeleton {
+  margin-right: 30px;
+  border-radius: 12px;
+  min-height: 76px;
+}
+@media (max-width: 614px) {
   .PeopleList__skeleton {
-    margin-right: 30px;
-    border-radius: 12px;
-    min-height: 76px; }
-    @media (max-width: 614px) {
-      .PeopleList__skeleton {
-        min-height: 106px; } }
+    min-height: 106px;
+  }
+}
 
 /*# sourceMappingURL=PeopleList.module.css.map */

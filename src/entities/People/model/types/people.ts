@@ -9,3 +9,7 @@ export interface People {
 export interface PeopleResult {
   results: People[];
 }
+
+export interface PeopleSchema {
+  valueSearch: string;
+}

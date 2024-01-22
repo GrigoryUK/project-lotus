@@ -2,7 +2,7 @@ import styles from './PeopleFooter.module.scss';
 
 import { cn } from '@/lib/utils';
 
-import { PeopleResult } from '@/entities/People/model/types/People';
+import { PeopleResult } from '@/entities/People/model/types/people';
 
 interface PeopleFooterProps {
   className?: string;

@@ -6,6 +6,7 @@ import { CombinedState, Reducer } from 'redux';
 import { $api } from '@/api/api';
 import { rtkApi } from '@/api/rtkApi';
 import { counterReducer } from '@/entities/Counter';
+import { peopleReducer } from '@/entities/People/model/slices/peopleSlice';
 
 import { createReducerManager } from './reducerManager';
 import { StateSchema, ThunkExtraArg } from './StateSchema';
@@ -13,6 +14,7 @@ import { StateSchema, ThunkExtraArg } from './StateSchema';
 export function createReduxStore(initialState?: StateSchema) {
   const rootReducers: ReducersMapObject<StateSchema> = {
     counter: counterReducer,
+    searchPeople: peopleReducer,
     [rtkApi.reducerPath]: rtkApi.reducer,
   };
 

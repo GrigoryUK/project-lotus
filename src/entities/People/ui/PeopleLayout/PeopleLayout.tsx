@@ -12,6 +12,12 @@ export const PeopleLayout = (props: PeopleLayoutProps): JSX.Element => {
 
   return (
     <div className={cn(styles.PeopleLayout, className)} {...rest}>
+      {/* eslint-disable-next-line @next/next/no-img-element */}
+      <img
+        className={styles.PeopleLayout__background}
+        src='./images/background.jpg'
+        alt='background'
+      />
       <div className={styles.PeopleLayout__container}>{children}</div>
     </div>
   );
